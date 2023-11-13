@@ -35,6 +35,23 @@ resource "azurerm_mssql_server" "mssql1" {
     yor_trace            = "54f6cb23-b30a-4f1d-8064-6f777b9b75db"
   }
 }
+resource "azurerm_mssql_server" "mssql1" {
+  name                         = "terragoat-mssql1-${var.environment}${random_integer.rnd_int.result}"
+  resource_group_name          = azurerm_resource_group.example.name
+  location                     = azurerm_resource_group.example.location
+  version                      = "12.0"
+  administrator_login          = "missadministrator"
+  administrator_login_password = "AdminPassword123!"
+  tags = {
+    git_commit           = "c6f8caa51942284d02465518822685897ad90141"
+    git_file             = "terraform/azure/mssql.tf"
+    git_last_modified_at = "2022-01-20 18:41:19"
+    git_last_modified_by = "28880387+tsmithv11@users.noreply.github.com"
+    git_modifiers        = "28880387+tsmithv11"
+    git_org              = "bridgecrewio"
+    git_repo             = "terragoat"
+  }
+}
 
 resource "azurerm_mssql_server" "mssql2" {
   name                         = "mssql2-${var.environment}${random_integer.rnd_int.result}"
