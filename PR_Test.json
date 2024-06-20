@@ -1,0 +1,216 @@
+[
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:41.986 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "Attempting to publish an sns event with the following params:  {\n  Message: '{\"customerName\":\"1070371744751243264\",\"email\":\"ygal@paloaltonetworks.com\",\"scope\":{\"topic\":\"openPRsSuccess\",\"subject\":\"1070371744751243264$$ygal@paloaltonetworks.com$$fixes\"},\"body\":{\"data\":[{\"repository\":\"Cider-Support/terragoat\",\"repoId\":\"Cider-Support/terragoat\",\"pr\":\"https://github.com/Cider-Support/terragoat/pull/3\",\"fixes\":[{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]},{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package-lock.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]}],\"isSuccess\":true}],\"statusCode\":200}}',\n  TopicArn: 'arn:aws:sns:us-east-1:469330042197:bc-websocket-sns-topic-v2prod'\n}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:41.814 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "[handleRemediationUve] Remediation activated for CVEs {\n  customerName: '1070371744751243264',\n  prUrl: 'https://github.com/Cider-Support/terragoat/pull/3',\n  cvePackagesToFix: '[{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]},{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package-lock.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]}]'\n}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:22.282 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "lambda invoke open-pr-api-prod service/createPullRequest with the following body: {\n  type: 'Github',\n  newFiles: [\n    {\n      path: 'packages/node/twistcli_test/package.json',\n      content: '{\n' +\n        '  \"name\": \"twistcli_test\",\n' +\n        '  \"version\": \"1.0.0\",\n' +\n        '  \"dependencies\": {\n' +\n        '    \"materialize-css\": \"1.0.0\",\n' +\n        '    \"xmldom\": \"^0.6.0\"\n' +\n        '  }\n' +\n        '}',\n      commitMessage: 'Prisma Cloud bot fix for packages/node/twistcli_test/package.json'\n    },\n    {\n      path: 'packages/node/twistcli_test/package-lock.json',\n      content: '{\n' +\n        '  \"name\": \"twistcli_test\",\n' +\n        '  \"version\": \"1.0.0\",\n' +\n        '  \"lockfileVersion\": 2,\n' +\n        '  \"requires\": true,\n' +\n        '  \"packages\": {\n' +\n        '    \"\": {\n' +\n        '      \"name\": \"twistcli_test\",\n' +\n        '      \"version\": \"1.0.0\",\n' +\n        '      \"dependencies\": {\n' +\n        '        \"materialize-css\": \"1.0.0\",\n' +\n        '        \"xmldom\": \"^0.6.0\"\n' +\n        '      }\n' +\n        '    },\n' +\n        '    \"node_modules/materialize-css\": {\n' +\n        '      \"version\": \"1.0.0\",\n' +\n        '      \"resolved\": \"https://registry.npmjs.org/materialize-css/-/materialize-css-1.0.0.tgz\",\n' +\n        '      \"integrity\": \"sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==\"\n' +\n        '    },\n' +\n        '    \"node_modules/xmldom\": {\n' +\n        '      \"version\": \"0.6.0\",\n' +\n        '      \"resolved\": \"https://registry.npmjs.org/xmldom/-/xmldom-0.6.0.tgz\",\n' +\n        '      \"integrity\": \"sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==\",\n' +\n        '      \"engines\": {\n' +\n        '        \"node\": \">=10.0.0\"\n' +\n        '      }\n' +\n        '    }\n' +\n        '  },\n' +\n        '  \"dependencies\": {\n' +\n        '    \"materialize-css\": {\n' +\n        '      \"version\": \"1.0.0\",\n' +\n        '      \"resolved\": \"https://registry.npmjs.org/materialize-css/-/materialize-css-1.0.0.tgz\",\n' +\n        '      \"integrity\": \"sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==\"\n' +\n        '    },\n' +\n        '    \"xmldom\": {\n' +\n        '      \"version\": \"0.6.0\",\n' +\n        '      \"resolved\": \"https://registry.npmjs.org/xmldom/-/xmldom-0.6.0.tgz\",\n' +\n        '      \"integrity\": \"sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==\"\n' +\n        '    }\n' +\n        '  }\n' +\n        '}',\n      commitMessage: 'Prisma Cloud bot fix for packages/node/twistcli_test/package-lock.json'\n    }\n  ],\n  installationId: 32456963,\n  sourceBranchName: 'master',\n  pr: '',\n  customerName: '1070371744751243264',\n  owner: 'Cider-Support',\n  repoName: 'terragoat',\n  prTitle: 'Prisma Cloud fix config: /packages/node/twistcli_test/package.json  and 1 more',\n  commitMessage: 'Prisma Cloud has found BC_VUL_2  and 1 other error(s)',\n  prBody: '### Prisma Cloud has created this PR to fix one or more resources in files in this project.\n' +\n    '#### Changes included in this PR:\n' +\n    '* `/packages/node/twistcli_test/package.json`\n' +\n    '* `/packages/node/twistcli_test/package-lock.json`\n' +\n    '#### Policies: \n' +\n    '* `Packages scan found vulnerabilities`\n' +\n    '\n' +\n    '\n' +\n    'Please check the changes in this PR to ensure they do not introduce conflicts to your project.'\n} us-east-1 {}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:22.207 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "Send request to commit and push to pull request \n{\"type\":\"Github\",\"newFiles\":[{\"path\":\"packages/node/twistcli_test/package.json\",\"content\":\"{\n  \"name\": \"twistcli_test\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"materialize-css\": \"1.0.0\",\n    \"xmldom\": \"^0.6.0\"\n  }\n}\",\"commitMessage\":\"Prisma Cloud bot fix for packages/node/twistcli_test/package.json\"},{\"path\":\"packages/node/twistcli_test/package-lock.json\",\"content\":\"{\n  \"name\": \"twistcli_test\",\n  \"version\": \"1.0.0\",\n  \"lockfileVersion\": 2,\n  \"requires\": true,\n  \"packages\": {\n    \"\": {\n      \"name\": \"twistcli_test\",\n      \"version\": \"1.0.0\",\n      \"dependencies\": {\n        \"materialize-css\": \"1.0.0\",\n        \"xmldom\": \"^0.6.0\"\n      }\n    },\n    \"node_modules/materialize-css\": {\n      \"version\": \"1.0.0\",\n      \"resolved\": \"https://registry.npmjs.org/materialize-css/-/materialize-css-1.0.0.tgz\",\n      \"integrity\": \"sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==\"\n    },\n    \"node_modules/xmldom\": {\n      \"version\": \"0.6.0\",\n      \"resolved\": \"https://registry.npmjs.org/xmldom/-/xmldom-0.6.0.tgz\",\n      \"integrity\": \"sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==\",\n      \"engines\": {\n        \"node\": \">=10.0.0\"\n      }\n    }\n  },\n  \"dependencies\": {\n    \"materialize-css\": {\n      \"version\": \"1.0.0\",\n      \"resolved\": \"https://registry.npmjs.org/materialize-css/-/materialize-css-1.0.0.tgz\",\n      \"integrity\": \"sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw==\"\n    },\n    \"xmldom\": {\n      \"version\": \"0.6.0\",\n      \"resolved\": \"https://registry.npmjs.org/xmldom/-/xmldom-0.6.0.tgz\",\n      \"integrity\": \"sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==\"\n    }\n  }\n}\",\"commitMessage\":\"Prisma Cloud bot fix for packages/node/twistcli_test/package-lock.json\"}],\"installationId\":32456963,\"sourceBranchName\":\"master\",\"pr\":\"\",\"customerName\":\"1070371744751243264\",\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"prTitle\":\"Prisma Cloud fix config: /packages/node/twistcli_test/package.json  and 1 more\",\"commitMessage\":\"Prisma Cloud has found BC_VUL_2  and 1 other error(s)\",\"prBody\":\"### Prisma Cloud has created this PR to fix one or more resources in files in this project.\n#### Changes included in this PR:\n* `/packages/node/twistcli_test/package.json`\n* `/packages/node/twistcli_test/package-lock.json`\n#### Policies: \n* `Packages scan found vulnerabilities`\n\n\nPlease check the changes in this PR to ensure they do not introduce conflicts to your project.\"}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:21.731 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "invoke remediationBuildtime {\"type\":\"Github\",\"customerName\":\"1070371744751243264\",\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"violations\":[{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]},{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package-lock.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]}]}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:18.289 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "called commitAndPushToPullRequest with body: {\"violationsToFix\":[{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]},{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package-lock.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]}],\"cvePackagesToFix\":[{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]},{\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"s3FilePath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json\",\"violationId\":\"BC_VUL_2\",\"resourceId\":\"/packages/node/twistcli_test/package-lock.json\",\"frameworkType\":\"Vulnerabilities\",\"fixPath\":\"checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json\",\"packageBumpStatus\":\"passed\",\"pr\":\"\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"sourceBranchName\":\"\",\"cvePackageIds\":[{\"cve_uuid\":\"87cf3722-64b2-493f-9207-31af8ef0c7d5\",\"package_id\":\"42def59c-1207-4990-8273-8ef36c780d67\"}]}],\"owner\":\"Cider-Support\",\"repoName\":\"terragoat\",\"runNumber\":\"007ac191-adea-460b-91ac-8d43a536199b\",\"pr\":\"\",\"sourceBranchName\":\"\",\"customerName\":\"1070371744751243264\"}",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:18.288 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "openPR:userDetails {\n  customers: [ '1070371744751243264' ],\n  email: 'ygal@paloaltonetworks.com',\n  customerName: '1070371744751243264'\n} resourcesToFix [\n  {\n    owner: 'Cider-Support',\n    repoName: 'terragoat',\n    s3FilePath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json',\n    violationId: 'BC_VUL_2',\n    resourceId: '/packages/node/twistcli_test/package.json',\n    frameworkType: 'Vulnerabilities',\n    fixPath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json',\n    packageBumpStatus: 'passed',\n    pr: '',\n    runNumber: '007ac191-adea-460b-91ac-8d43a536199b',\n    sourceBranchName: '',\n    cvePackageIds: [ [Object] ]\n  },\n  {\n    owner: 'Cider-Support',\n    repoName: 'terragoat',\n    s3FilePath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json',\n    violationId: 'BC_VUL_2',\n    resourceId: '/packages/node/twistcli_test/package-lock.json',\n    frameworkType: 'Vulnerabilities',\n    fixPath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json',\n    packageBumpStatus: 'passed',\n    pr: '',\n    runNumber: '007ac191-adea-460b-91ac-8d43a536199b',\n    sourceBranchName: '',\n    cvePackageIds: [ [Object] ]\n  }\n] supplyChainFixParams null",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
+    },
+    {
+        "metadata": {
+            "category": null,
+            "className": null,
+            "methodName": null,
+            "severity": "INFO",
+            "threadId": "",
+            "applicationName": "/aws/lambda/bc-remediations-v2-controller-prod",
+            "subsystemName": "bc-app0-us-east-1_prod",
+            "timestamp": "12/11/2023 04:40:18.288 PM"
+        },
+        "text": {
+            "faas_name": "bc-remediations-v2-controller",
+            "faas_name_enriched": {
+                "team_name": "bc-prod-infrasec",
+                "data": "enriched"
+            },
+            "message": "[RemediationService][OpenPRPerRepo] openPR:userDetails {\n  customers: [ '1070371744751243264' ],\n  email: 'ygal@paloaltonetworks.com',\n  customerName: '1070371744751243264'\n} resourcesToFix [\n  {\n    owner: 'Cider-Support',\n    repoName: 'terragoat',\n    s3FilePath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package.json',\n    violationId: 'BC_VUL_2',\n    resourceId: '/packages/node/twistcli_test/package.json',\n    frameworkType: 'Vulnerabilities',\n    fixPath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package.json',\n    packageBumpStatus: 'passed',\n    pr: '',\n    runNumber: '007ac191-adea-460b-91ac-8d43a536199b',\n    sourceBranchName: '',\n    cvePackageIds: [ [Object] ]\n  },\n  {\n    owner: 'Cider-Support',\n    repoName: 'terragoat',\n    s3FilePath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/src/packages/node/twistcli_test/package-lock.json',\n    violationId: 'BC_VUL_2',\n    resourceId: '/packages/node/twistcli_test/package-lock.json',\n    frameworkType: 'Vulnerabilities',\n    fixPath: 'checkov/1070371744751243264/Cider-Support/terragoat/master/fixes/BC_VUL_2/packages/node/twistcli_test/package-lock.json',\n    packageBumpStatus: 'passed',\n    pr: '',\n    runNumber: '007ac191-adea-460b-91ac-8d43a536199b',\n    sourceBranchName: '',\n    cvePackageIds: [ [Object] ]\n  }\n]",
+            "customerName_enriched": {
+                "accountName": "PALO ALTO NETWORKS (INDIA) PRIVATE LIMITED",
+                "accountType": "Internal",
+                "billingModel": "TRIAL"
+            },
+            "request_id": "de1c1a00-c00d-4a4f-b7af-a1bb7c08128c",
+            "customerName": "1070371744751243264"
+        }
