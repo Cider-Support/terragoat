@@ -35,7 +35,7 @@ resource "azurerm_mssql_server" "mssql1" {
     yor_trace            = "54f6cb23-b30a-4f1d-8064-6f777b9b75db"
   }
 }
-resource "azurerm_mssql_server" "mssql1" {
+resource "azurerm_mssql_server" "mssql1.2" {
   name                         = "terragoat-mssql1-${var.environment}${random_integer.rnd_int.result}"
   resource_group_name          = azurerm_resource_group.example.name
   location                     = azurerm_resource_group.example.location
